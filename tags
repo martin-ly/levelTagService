@@ -1,0 +1,108 @@
+!_TAG_FILE_FORMAT	2	
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted/
+!_TAG_PROGRAM_AUTHOR	Joel Stemmer	/stemmertech@gmail.com/
+!_TAG_PROGRAM_NAME	gotags	
+!_TAG_PROGRAM_URL	https://github.com/jstemmer/gotags	
+!_TAG_PROGRAM_VERSION	1.2.0	
+Assign	src/level/level.go	11;"	m	access:public	line:11	ntype:LevelInterface	signature:(string, int, string)
+Assign	src/level/level.go	43;"	m	access:public	ctype:Level	line:43	signature:(key string, levels int, val string)
+Base	src/global/global.go	11;"	v	access:public	line:11	type:int
+BitEnd	src/level/level.go	140;"	m	access:public	ctype:IndexLevel	line:140	signature:()	type:int
+BitRange	src/level/level.go	151;"	m	access:public	ctype:IndexLevel	line:151	signature:()	type:int, int
+BitStart	src/level/level.go	129;"	m	access:public	ctype:IndexLevel	line:129	signature:()	type:int
+C	src/kv/kv.go	107;"	i	line:107
+CheckBit	src/level/level.go	113;"	m	access:public	ctype:IndexLevel	line:113	signature:(idx int, bit int)	type:bool
+CheckBitFlat	src/level/level.go	109;"	m	access:public	ctype:IndexLevel	line:109	signature:(bit int)	type:bool
+CheckByte	src/level/level.go	97;"	m	access:public	ctype:IndexLevel	line:97	signature:(idx int)	type:bool
+Close	src/kv/kv.go	124;"	f	access:public	line:124	signature:()
+DataBufSize	src/global/global.go	14;"	v	access:public	line:14	type:int
+DataLevel	src/level/level.go	189;"	t	access:public	line:189	type:struct
+DelError	src/kv/kv.go	116;"	v	access:public	line:116	type:error
+Delete	src/kv/kv.go	158;"	f	access:public	line:158	signature:(k *string)	type:error
+Delete	src/update/update.go	23;"	f	access:public	line:23	signature:(tid int32, uid int32)
+End	src/level/level.go	55;"	m	access:public	ctype:Level	line:55	signature:()	type:int
+FuzzyRange	src/search/search.go	10;"	f	access:public	line:10	signature:(tid int32)	type:int, int
+Get	src/kv/kv.go	141;"	f	access:public	line:141	signature:(k *string)	type:string, error
+GetLevel	src/level/level.go	272;"	f	access:public	line:272	signature:(key string, levels int, level LevelInterface)	type:bool
+GetLevel1	src/level/level.go	295;"	f	access:public	ctype:IndexLevel	line:295	signature:(id int32)	type:*IndexLevel
+GetLevel2	src/level/level.go	321;"	f	access:public	ctype:IndexLevel	line:321	signature:(key string)	type:*IndexLevel
+GetLevel3	src/level/level.go	343;"	f	access:public	ctype:DataLevel	line:343	signature:(key string)	type:*DataLevel
+GetUsrByRange	src/search/search.go	69;"	f	access:public	line:69	signature:(tid int32, start int, end int, limit int)	type:[]Usr
+GetWeight	src/level/level.go	254;"	m	access:public	ctype:DataLevel	line:254	signature:(itmNum int)	type:int32, bool
+IndexBufSize	src/global/global.go	13;"	v	access:public	line:13	type:int
+IndexLevel	src/level/level.go	66;"	t	access:public	line:66	type:struct
+Insert	src/update/update.go	19;"	f	access:public	line:19	signature:(tid int32, uid int32, weight int32)
+ItemNum	src/global/global.go	12;"	v	access:public	line:12	type:int
+L1	src/global/global.go	7;"	v	access:public	line:7	type:string
+L1BitUsrs	src/global/global.go	20;"	v	access:public	line:20	type:int
+L1Key	src/global/global.go	22;"	f	access:public	line:22	signature:(id int32)	type:string
+L2	src/global/global.go	8;"	v	access:public	line:8	type:string
+L2BitUsrs	src/global/global.go	19;"	v	access:public	line:19	type:int
+L2Key	src/global/global.go	26;"	f	access:public	line:26	signature:(l1key string, bitoff int)	type:string
+L2Space	src/global/global.go	17;"	v	access:public	line:17	type:int
+L3	src/global/global.go	9;"	v	access:public	line:9	type:string
+L3Key	src/global/global.go	33;"	f	access:public	line:33	signature:(l2key string, bitoff int)	type:string
+L3Space	src/global/global.go	16;"	v	access:public	line:16	type:int
+Level	src/level/level.go	14;"	t	access:public	line:14	type:struct
+Level	src/level/level.go	190;"	e	access:public	ctype:DataLevel	line:190	type:Level
+Level	src/level/level.go	67;"	e	access:public	ctype:IndexLevel	line:67	type:Level
+LevelInterface	src/level/level.go	10;"	n	access:public	line:10	type:interface
+NewDataLevel	src/level/level.go	193;"	f	access:public	ctype:DataLevel	line:193	signature:()	type:*DataLevel
+NewIndexLevel	src/level/level.go	70;"	f	access:public	ctype:IndexLevel	line:70	signature:()	type:*IndexLevel
+NextLevelKey	src/level/level.go	158;"	m	access:public	ctype:IndexLevel	line:158	signature:(bitoff int)	type:string
+NotExist	src/kv/kv.go	115;"	v	access:public	line:115	type:error
+Open	src/kv/kv.go	118;"	f	access:public	line:118	signature:(name *string)
+Put	src/kv/kv.go	128;"	f	access:public	line:128	signature:(k *string, v *string)	type:error
+PutError	src/kv/kv.go	114;"	v	access:public	line:114	type:error
+Range	src/level/level.go	60;"	m	access:public	ctype:Level	line:60	signature:()	type:int, int
+Range	src/search/search.go	23;"	f	access:public	line:23	signature:(tid int32)	type:int, int
+Score	src/search/search.go	66;"	w	access:public	ctype:Usr	line:66	type:int32
+SetBit	src/level/level.go	79;"	m	access:public	ctype:IndexLevel	line:79	signature:(bit int)	type:bool
+SetEnd	src/level/level.go	208;"	m	access:public	ctype:DataLevel	line:208	signature:(itm int)
+SetEnd	src/level/level.go	29;"	m	access:public	ctype:Level	line:29	signature:(byteOff int)
+SetItm	src/level/level.go	214;"	m	access:public	ctype:DataLevel	line:214	signature:(itm int, weight int32)	type:bool
+SetKey	src/level/level.go	39;"	m	access:public	ctype:Level	line:39	signature:(key string)
+SetLevel1	src/level/level.go	304;"	f	access:public	ctype:IndexLevel	line:304	signature:(tid int32, uid int32)	type:*IndexLevel
+SetLevel2	src/level/level.go	329;"	f	access:public	ctype:IndexLevel	line:329	signature:(key2 string, bitOff int)	type:*IndexLevel
+SetLevel3	src/level/level.go	351;"	f	access:public	ctype:DataLevel	line:351	signature:(key3 string, itm int, weight int32)	type:*DataLevel
+SetLevels	src/level/level.go	35;"	m	access:public	ctype:Level	line:35	signature:(levels int)
+SetNextLevel	src/level/level.go	170;"	m	access:public	ctype:IndexLevel	line:170	signature:(uid int32, weight int32)	type:*IndexLevel
+SetStart	src/level/level.go	202;"	m	access:public	ctype:DataLevel	line:202	signature:(itm int)
+SetStart	src/level/level.go	23;"	m	access:public	ctype:Level	line:23	signature:(byteOff int)
+Start	src/level/level.go	51;"	m	access:public	ctype:Level	line:51	signature:()	type:int
+TestKv	src/kv/kv_test.go	10;"	f	access:public	line:10	signature:(t *testing.T)
+Uid	src/search/search.go	65;"	w	access:public	ctype:Usr	line:65	type:int32
+Usr	src/search/search.go	64;"	t	access:public	line:64	type:struct
+buf	src/level/level.go	20;"	w	access:private	ctype:Level	line:20	type:[]byte
+bufSize	src/level/level.go	19;"	w	access:private	ctype:Level	line:19	type:int
+dbInit	src/main.go	11;"	f	access:private	line:11	signature:()
+end	src/level/level.go	16;"	w	access:private	ctype:Level	line:16	type:int
+errors	src/kv/kv.go	110;"	i	line:110
+fmt	src/main.go	4;"	i	line:4
+global	src/global/global.go	1;"	p	line:1
+global	src/level/level.go	4;"	i	line:4
+global	src/search/search.go	6;"	i	line:6
+key	src/level/level.go	18;"	w	access:private	ctype:Level	line:18	type:string
+kv	src/kv/kv.go	1;"	p	line:1
+kv	src/kv/kv_test.go	1;"	p	line:1
+kv	src/level/level.go	5;"	i	line:5
+kv	src/main.go	6;"	i	line:6
+level	src/level/level.go	17;"	w	access:private	ctype:Level	line:17	type:int
+level	src/level/level.go	1;"	p	line:1
+level	src/search/search.go	7;"	i	line:7
+level	src/update/update.go	4;"	i	line:4
+main	src/main.go	16;"	f	access:private	line:16	signature:()
+main	src/main.go	1;"	p	line:1
+once	src/kv/kv_test.go	8;"	v	access:private	line:8	type:sync.Once
+search	src/main.go	7;"	i	line:7
+search	src/search/search.go	1;"	p	line:1
+start	src/level/level.go	15;"	w	access:private	ctype:Level	line:15	type:int
+strconv	src/global/global.go	4;"	i	line:4
+strconv	src/level/level.go	7;"	i	line:7
+strconv	src/search/search.go	4;"	i	line:4
+sync	src/kv/kv_test.go	4;"	i	line:4
+testing	src/kv/kv_test.go	5;"	i	line:5
+unsafe	src/kv/kv.go	111;"	i	line:111
+update	src/main.go	8;"	i	line:8
+update	src/update/update.go	1;"	p	line:1
+update	src/update/update.go	7;"	f	access:private	line:7	signature:(tid int32, uid int32, weight int32, toDel bool)
