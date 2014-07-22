@@ -86,6 +86,9 @@ func GetUsrByRange(tid int32, start int, end int, limit int) (u []Usr) {
 	if l1End >= end/global.L1BitUsrs {
 		l1End = (end / global.L1BitUsrs) + 1
 	}
+	if l1End <= l1Start {
+		return
+	}
 
 	for i := l1Start; i != l1End; i++ {
 		if !l1.CheckBitFlat(i) {

@@ -4,6 +4,7 @@
 !_TAG_PROGRAM_NAME	gotags	
 !_TAG_PROGRAM_URL	https://github.com/jstemmer/gotags	
 !_TAG_PROGRAM_VERSION	1.2.0	
+AddToProcessorMap	src/thrift/gen-go-modified/tagSearchService/tag_search_service.go	181;"	m	access:public	ctype:TagSearchServiceProcessor	line:181	signature:(key string, processor thrift.TProcessorFunction)
 Assign	src/level/level.go	11;"	m	access:public	line:11	ntype:LevelInterface	signature:(string, int, string)
 Assign	src/level/level.go	43;"	m	access:public	ctype:Level	line:43	signature:(key string, levels int, val string)
 Base	src/global/global.go	11;"	v	access:public	line:11	type:int
@@ -21,16 +22,30 @@ DelError	src/kv/kv.go	116;"	v	access:public	line:116	type:error
 Delete	src/kv/kv.go	158;"	f	access:public	line:158	signature:(k *string)	type:error
 Delete	src/update/update.go	23;"	f	access:public	line:23	signature:(tid int32, uid int32)
 End	src/level/level.go	55;"	m	access:public	ctype:Level	line:55	signature:()	type:int
+EndUid	src/thrift/gen-go-modified/tagSearchService/ttypes.go	21;"	w	access:public	ctype:Range	line:21	type:int32
 FuzzyRange	src/search/search.go	10;"	f	access:public	line:10	signature:(tid int32)	type:int, int
 Get	src/kv/kv.go	141;"	f	access:public	line:141	signature:(k *string)	type:string, error
 GetLevel	src/level/level.go	272;"	f	access:public	line:272	signature:(key string, levels int, level LevelInterface)	type:bool
 GetLevel1	src/level/level.go	295;"	f	access:public	ctype:IndexLevel	line:295	signature:(id int32)	type:*IndexLevel
 GetLevel2	src/level/level.go	321;"	f	access:public	ctype:IndexLevel	line:321	signature:(key string)	type:*IndexLevel
 GetLevel3	src/level/level.go	343;"	f	access:public	ctype:DataLevel	line:343	signature:(key string)	type:*DataLevel
+GetProcessorFunction	src/thrift/gen-go-modified/tagSearchService/tag_search_service.go	185;"	m	access:public	ctype:TagSearchServiceProcessor	line:185	signature:(key string)	type:thrift.TProcessorFunction, bool
+GetRange	src/main.go	49;"	m	access:public	ctype:TagSearchServiceImpl	line:49	signature:(tagId int32)	type:*tagSearchService.Range, error
+GetRange	src/thrift/gen-go-modified/tagSearchService/tag_search_service.go	20;"	m	access:public	line:20	ntype:TagSearchService	signature:(tagId int32)	type:*Range, error
+GetRange	src/thrift/gen-go-modified/tagSearchService/tag_search_service.go	56;"	m	access:public	ctype:TagSearchServiceClient	line:56	signature:(tagId int32)	type:*Range, error
+GetRangeArgs	src/thrift/gen-go-modified/tagSearchService/tag_search_service.go	309;"	t	access:public	line:309	type:struct
+GetRangeResult	src/thrift/gen-go-modified/tagSearchService/tag_search_service.go	394;"	t	access:public	line:394	type:struct
 GetUsrByRange	src/search/search.go	69;"	f	access:public	line:69	signature:(tid int32, start int, end int, limit int)	type:[]Usr
+GetUsrs	src/main.go	60;"	m	access:public	ctype:TagSearchServiceImpl	line:60	signature:(tagId int32, r *tagSearchService.Range, limitSize int32)	type:[]tagSearchService.UsrInfo, error
+GetUsrs	src/thrift/gen-go-modified/tagSearchService/tag_search_service.go	117;"	m	access:public	ctype:TagSearchServiceClient	line:117	signature:(tagId int32, r *Range, limitSize int32)	type:[]UsrInfo, error
+GetUsrs	src/thrift/gen-go-modified/tagSearchService/tag_search_service.go	25;"	m	access:public	line:25	ntype:TagSearchService	signature:(tagId int32, r *Range, limitSize int32)	type:[]UsrInfo, error
+GetUsrsArgs	src/thrift/gen-go-modified/tagSearchService/tag_search_service.go	483;"	t	access:public	line:483	type:struct
+GetUsrsResult	src/thrift/gen-go-modified/tagSearchService/tag_search_service.go	629;"	t	access:public	line:629	type:struct
 GetWeight	src/level/level.go	254;"	m	access:public	ctype:DataLevel	line:254	signature:(itmNum int)	type:int32, bool
+GoUnusedProtection__	src/thrift/gen-go-modified/tagSearchService/ttypes.go	17;"	v	access:public	line:17	type:int
 IndexBufSize	src/global/global.go	13;"	v	access:public	line:13	type:int
 IndexLevel	src/level/level.go	66;"	t	access:public	line:66	type:struct
+InputProtocol	src/thrift/gen-go-modified/tagSearchService/tag_search_service.go	31;"	w	access:public	ctype:TagSearchServiceClient	line:31	type:thrift.TProtocol
 Insert	src/update/update.go	19;"	f	access:public	line:19	signature:(tid int32, uid int32, weight int32)
 ItemNum	src/global/global.go	12;"	v	access:public	line:12	type:int
 L1	src/global/global.go	7;"	v	access:public	line:7	type:string
@@ -47,16 +62,42 @@ Level	src/level/level.go	14;"	t	access:public	line:14	type:struct
 Level	src/level/level.go	190;"	e	access:public	ctype:DataLevel	line:190	type:Level
 Level	src/level/level.go	67;"	e	access:public	ctype:IndexLevel	line:67	type:Level
 LevelInterface	src/level/level.go	10;"	n	access:public	line:10	type:interface
+LimitSize	src/thrift/gen-go-modified/tagSearchService/tag_search_service.go	486;"	w	access:public	ctype:GetUsrsArgs	line:486	type:int32
+NetworkAddr	src/main.go	44;"	c	access:public	line:44
 NewDataLevel	src/level/level.go	193;"	f	access:public	ctype:DataLevel	line:193	signature:()	type:*DataLevel
+NewGetRangeArgs	src/thrift/gen-go-modified/tagSearchService/tag_search_service.go	313;"	f	access:public	ctype:GetRangeArgs	line:313	signature:()	type:*GetRangeArgs
+NewGetRangeResult	src/thrift/gen-go-modified/tagSearchService/tag_search_service.go	398;"	f	access:public	ctype:GetRangeResult	line:398	signature:()	type:*GetRangeResult
+NewGetUsrsArgs	src/thrift/gen-go-modified/tagSearchService/tag_search_service.go	489;"	f	access:public	ctype:GetUsrsArgs	line:489	signature:()	type:*GetUsrsArgs
+NewGetUsrsResult	src/thrift/gen-go-modified/tagSearchService/tag_search_service.go	633;"	f	access:public	ctype:GetUsrsResult	line:633	signature:()	type:*GetUsrsResult
 NewIndexLevel	src/level/level.go	70;"	f	access:public	ctype:IndexLevel	line:70	signature:()	type:*IndexLevel
+NewRange	src/thrift/gen-go-modified/tagSearchService/ttypes.go	24;"	f	access:public	ctype:Range	line:24	signature:()	type:*Range
+NewTagSearchServiceClientFactory	src/thrift/gen-go-modified/tagSearchService/tag_search_service.go	36;"	f	access:public	ctype:TagSearchServiceClient	line:36	signature:(t thrift.TTransport, f thrift.TProtocolFactory)	type:*TagSearchServiceClient
+NewTagSearchServiceClientProtocol	src/thrift/gen-go-modified/tagSearchService/tag_search_service.go	45;"	f	access:public	ctype:TagSearchServiceClient	line:45	signature:(t thrift.TTransport, iprot thrift.TProtocol, oprot thrift.TProtocol)	type:*TagSearchServiceClient
+NewTagSearchServiceProcessor	src/thrift/gen-go-modified/tagSearchService/tag_search_service.go	194;"	f	access:public	ctype:TagSearchServiceProcessor	line:194	signature:(handler TagSearchService)	type:*TagSearchServiceProcessor
+NewUsrInfo	src/thrift/gen-go-modified/tagSearchService/ttypes.go	139;"	f	access:public	ctype:UsrInfo	line:139	signature:()	type:*UsrInfo
 NextLevelKey	src/level/level.go	158;"	m	access:public	ctype:IndexLevel	line:158	signature:(bitoff int)	type:string
 NotExist	src/kv/kv.go	115;"	v	access:public	line:115	type:error
 Open	src/kv/kv.go	118;"	f	access:public	line:118	signature:(name *string)
+OutputProtocol	src/thrift/gen-go-modified/tagSearchService/tag_search_service.go	32;"	w	access:public	ctype:TagSearchServiceClient	line:32	type:thrift.TProtocol
+Process	src/thrift/gen-go-modified/tagSearchService/tag_search_service.go	202;"	m	access:public	ctype:TagSearchServiceProcessor	line:202	signature:(iprot, oprot thrift.TProtocol)	type:bool, thrift.TException
+Process	src/thrift/gen-go-modified/tagSearchService/tag_search_service.go	225;"	m	access:public	ctype:tagSearchServiceProcessorGetRange	line:225	signature:(seqId int32, iprot, oprot thrift.TProtocol)	type:bool, thrift.TException
+Process	src/thrift/gen-go-modified/tagSearchService/tag_search_service.go	268;"	m	access:public	ctype:tagSearchServiceProcessorGetUsrs	line:268	signature:(seqId int32, iprot, oprot thrift.TProtocol)	type:bool, thrift.TException
+ProcessorMap	src/thrift/gen-go-modified/tagSearchService/tag_search_service.go	190;"	m	access:public	ctype:TagSearchServiceProcessor	line:190	signature:()	type:map[string]thrift.TProcessorFunction
+ProtocolFactory	src/thrift/gen-go-modified/tagSearchService/tag_search_service.go	30;"	w	access:public	ctype:TagSearchServiceClient	line:30	type:thrift.TProtocolFactory
 Put	src/kv/kv.go	128;"	f	access:public	line:128	signature:(k *string, v *string)	type:error
 PutError	src/kv/kv.go	114;"	v	access:public	line:114	type:error
+R	src/thrift/gen-go-modified/tagSearchService/tag_search_service.go	485;"	w	access:public	ctype:GetUsrsArgs	line:485	type:*Range
 Range	src/level/level.go	60;"	m	access:public	ctype:Level	line:60	signature:()	type:int, int
 Range	src/search/search.go	23;"	f	access:public	line:23	signature:(tid int32)	type:int, int
+Range	src/thrift/gen-go-modified/tagSearchService/ttypes.go	19;"	t	access:public	line:19	type:struct
+Read	src/thrift/gen-go-modified/tagSearchService/tag_search_service.go	317;"	m	access:public	ctype:GetRangeArgs	line:317	signature:(iprot thrift.TProtocol)	type:error
+Read	src/thrift/gen-go-modified/tagSearchService/tag_search_service.go	402;"	m	access:public	ctype:GetRangeResult	line:402	signature:(iprot thrift.TProtocol)	type:error
+Read	src/thrift/gen-go-modified/tagSearchService/tag_search_service.go	493;"	m	access:public	ctype:GetUsrsArgs	line:493	signature:(iprot thrift.TProtocol)	type:error
+Read	src/thrift/gen-go-modified/tagSearchService/tag_search_service.go	637;"	m	access:public	ctype:GetUsrsResult	line:637	signature:(iprot thrift.TProtocol)	type:error
+Read	src/thrift/gen-go-modified/tagSearchService/ttypes.go	143;"	m	access:public	ctype:UsrInfo	line:143	signature:(iprot thrift.TProtocol)	type:error
+Read	src/thrift/gen-go-modified/tagSearchService/ttypes.go	28;"	m	access:public	ctype:Range	line:28	signature:(iprot thrift.TProtocol)	type:error
 Score	src/search/search.go	66;"	w	access:public	ctype:Usr	line:66	type:int32
+SeqId	src/thrift/gen-go-modified/tagSearchService/tag_search_service.go	33;"	w	access:public	ctype:TagSearchServiceClient	line:33	type:int32
 SetBit	src/level/level.go	79;"	m	access:public	ctype:IndexLevel	line:79	signature:(bit int)	type:bool
 SetEnd	src/level/level.go	208;"	m	access:public	ctype:DataLevel	line:208	signature:(itm int)
 SetEnd	src/level/level.go	29;"	m	access:public	ctype:Level	line:29	signature:(byteOff int)
@@ -70,39 +111,138 @@ SetNextLevel	src/level/level.go	170;"	m	access:public	ctype:IndexLevel	line:170	
 SetStart	src/level/level.go	202;"	m	access:public	ctype:DataLevel	line:202	signature:(itm int)
 SetStart	src/level/level.go	23;"	m	access:public	ctype:Level	line:23	signature:(byteOff int)
 Start	src/level/level.go	51;"	m	access:public	ctype:Level	line:51	signature:()	type:int
+StartUid	src/thrift/gen-go-modified/tagSearchService/ttypes.go	20;"	w	access:public	ctype:Range	line:20	type:int32
+String	src/thrift/gen-go-modified/tagSearchService/tag_search_service.go	387;"	m	access:public	ctype:GetRangeArgs	line:387	signature:()	type:string
+String	src/thrift/gen-go-modified/tagSearchService/tag_search_service.go	476;"	m	access:public	ctype:GetRangeResult	line:476	signature:()	type:string
+String	src/thrift/gen-go-modified/tagSearchService/tag_search_service.go	622;"	m	access:public	ctype:GetUsrsArgs	line:622	signature:()	type:string
+String	src/thrift/gen-go-modified/tagSearchService/tag_search_service.go	732;"	m	access:public	ctype:GetUsrsResult	line:732	signature:()	type:string
+String	src/thrift/gen-go-modified/tagSearchService/ttypes.go	127;"	m	access:public	ctype:Range	line:127	signature:()	type:string
+String	src/thrift/gen-go-modified/tagSearchService/ttypes.go	242;"	m	access:public	ctype:UsrInfo	line:242	signature:()	type:string
+Success	src/thrift/gen-go-modified/tagSearchService/tag_search_service.go	395;"	w	access:public	ctype:GetRangeResult	line:395	type:*Range
+Success	src/thrift/gen-go-modified/tagSearchService/tag_search_service.go	630;"	w	access:public	ctype:GetUsrsResult	line:630	type:[]UsrInfo
+TagId	src/thrift/gen-go-modified/tagSearchService/tag_search_service.go	310;"	w	access:public	ctype:GetRangeArgs	line:310	type:int32
+TagId	src/thrift/gen-go-modified/tagSearchService/tag_search_service.go	484;"	w	access:public	ctype:GetUsrsArgs	line:484	type:int32
+TagSearchService	src/thrift/gen-go-modified/tagSearchService/tag_search_service.go	17;"	n	access:public	line:17	type:interface
+TagSearchServiceClient	src/thrift/gen-go-modified/tagSearchService/tag_search_service.go	28;"	t	access:public	line:28	type:struct
+TagSearchServiceImpl	src/main.go	47;"	t	access:public	line:47	type:struct
+TagSearchServiceProcessor	src/thrift/gen-go-modified/tagSearchService/tag_search_service.go	176;"	t	access:public	line:176	type:struct
 TestKv	src/kv/kv_test.go	10;"	f	access:public	line:10	signature:(t *testing.T)
+Transport	src/thrift/gen-go-modified/tagSearchService/tag_search_service.go	29;"	w	access:public	ctype:TagSearchServiceClient	line:29	type:thrift.TTransport
 Uid	src/search/search.go	65;"	w	access:public	ctype:Usr	line:65	type:int32
+Uid	src/thrift/gen-go-modified/tagSearchService/ttypes.go	135;"	w	access:public	ctype:UsrInfo	line:135	type:int32
+Usage	src/client/tag_search_service-remote.go	19;"	f	access:public	line:19	signature:()
+Usage	src/thrift/gen-go-modified/tagSearchService/tag_search_service-remote/tag_search_service-remote.go	19;"	f	access:public	line:19	signature:()
 Usr	src/search/search.go	64;"	t	access:public	line:64	type:struct
+UsrInfo	src/thrift/gen-go-modified/tagSearchService/ttypes.go	134;"	t	access:public	line:134	type:struct
+Weight	src/thrift/gen-go-modified/tagSearchService/ttypes.go	136;"	w	access:public	ctype:UsrInfo	line:136	type:int32
+Write	src/thrift/gen-go-modified/tagSearchService/tag_search_service.go	358;"	m	access:public	ctype:GetRangeArgs	line:358	signature:(oprot thrift.TProtocol)	type:error
+Write	src/thrift/gen-go-modified/tagSearchService/tag_search_service.go	442;"	m	access:public	ctype:GetRangeResult	line:442	signature:(oprot thrift.TProtocol)	type:error
+Write	src/thrift/gen-go-modified/tagSearchService/tag_search_service.go	559;"	m	access:public	ctype:GetUsrsArgs	line:559	signature:(oprot thrift.TProtocol)	type:error
+Write	src/thrift/gen-go-modified/tagSearchService/tag_search_service.go	690;"	m	access:public	ctype:GetUsrsResult	line:690	signature:(oprot thrift.TProtocol)	type:error
+Write	src/thrift/gen-go-modified/tagSearchService/ttypes.go	197;"	m	access:public	ctype:UsrInfo	line:197	signature:(oprot thrift.TProtocol)	type:error
+Write	src/thrift/gen-go-modified/tagSearchService/ttypes.go	82;"	m	access:public	ctype:Range	line:82	signature:(oprot thrift.TProtocol)	type:error
+_main_example	src/main.go	20;"	f	access:private	line:20	signature:()
 buf	src/level/level.go	20;"	w	access:private	ctype:Level	line:20	type:[]byte
 bufSize	src/level/level.go	19;"	w	access:private	ctype:Level	line:19	type:int
-dbInit	src/main.go	11;"	f	access:private	line:11	signature:()
+dbInit	src/main.go	15;"	f	access:private	line:15	signature:()
 end	src/level/level.go	16;"	w	access:private	ctype:Level	line:16	type:int
 errors	src/kv/kv.go	110;"	i	line:110
-fmt	src/main.go	4;"	i	line:4
+errors	src/main.go	4;"	i	line:4
+flag	src/client/tag_search_service-remote.go	7;"	i	line:7
+flag	src/thrift/gen-go-modified/tagSearchService/tag_search_service-remote/tag_search_service-remote.go	7;"	i	line:7
+fmt	src/client/tag_search_service-remote.go	8;"	i	line:8
+fmt	src/main.go	5;"	i	line:5
+fmt	src/thrift/gen-go-modified/tagSearchService/constants.go	7;"	i	line:7
+fmt	src/thrift/gen-go-modified/tagSearchService/tag_search_service-remote/tag_search_service-remote.go	8;"	i	line:8
+fmt	src/thrift/gen-go-modified/tagSearchService/tag_search_service.go	7;"	i	line:7
+fmt	src/thrift/gen-go-modified/tagSearchService/ttypes.go	7;"	i	line:7
+git.apache.org/thrift.git/lib/go/thrift	src/client/tag_search_service-remote.go	9;"	i	line:9
+git.apache.org/thrift.git/lib/go/thrift	src/main.go	8;"	i	line:8
+git.apache.org/thrift.git/lib/go/thrift	src/thrift/gen-go-modified/tagSearchService/constants.go	8;"	i	line:8
+git.apache.org/thrift.git/lib/go/thrift	src/thrift/gen-go-modified/tagSearchService/tag_search_service-remote/tag_search_service-remote.go	9;"	i	line:9
+git.apache.org/thrift.git/lib/go/thrift	src/thrift/gen-go-modified/tagSearchService/tag_search_service.go	8;"	i	line:8
+git.apache.org/thrift.git/lib/go/thrift	src/thrift/gen-go-modified/tagSearchService/ttypes.go	8;"	i	line:8
 global	src/global/global.go	1;"	p	line:1
 global	src/level/level.go	4;"	i	line:4
 global	src/search/search.go	6;"	i	line:6
+handler	src/thrift/gen-go-modified/tagSearchService/tag_search_service.go	178;"	w	access:private	ctype:TagSearchServiceProcessor	line:178	type:TagSearchService
+handler	src/thrift/gen-go-modified/tagSearchService/tag_search_service.go	222;"	w	access:private	ctype:tagSearchServiceProcessorGetRange	line:222	type:TagSearchService
+handler	src/thrift/gen-go-modified/tagSearchService/tag_search_service.go	265;"	w	access:private	ctype:tagSearchServiceProcessorGetUsrs	line:265	type:TagSearchService
+init	src/thrift/gen-go-modified/tagSearchService/constants.go	17;"	f	access:private	line:17	signature:()
 key	src/level/level.go	18;"	w	access:private	ctype:Level	line:18	type:string
 kv	src/kv/kv.go	1;"	p	line:1
 kv	src/kv/kv_test.go	1;"	p	line:1
 kv	src/level/level.go	5;"	i	line:5
-kv	src/main.go	6;"	i	line:6
+kv	src/main.go	9;"	i	line:9
 level	src/level/level.go	17;"	w	access:private	ctype:Level	line:17	type:int
 level	src/level/level.go	1;"	p	line:1
 level	src/search/search.go	7;"	i	line:7
 level	src/update/update.go	4;"	i	line:4
-main	src/main.go	16;"	f	access:private	line:16	signature:()
+main	src/client/tag_search_service-remote.go	29;"	f	access:private	line:29	signature:()
+main	src/client/tag_search_service-remote.go	4;"	p	line:4
 main	src/main.go	1;"	p	line:1
+main	src/main.go	80;"	f	access:private	line:80	signature:()
+main	src/thrift/gen-go-modified/tagSearchService/tag_search_service-remote/tag_search_service-remote.go	29;"	f	access:private	line:29	signature:()
+main	src/thrift/gen-go-modified/tagSearchService/tag_search_service-remote/tag_search_service-remote.go	4;"	p	line:4
+math	src/client/tag_search_service-remote.go	10;"	i	line:10
+math	src/thrift/gen-go-modified/tagSearchService/constants.go	9;"	i	line:9
+math	src/thrift/gen-go-modified/tagSearchService/tag_search_service-remote/tag_search_service-remote.go	10;"	i	line:10
+math	src/thrift/gen-go-modified/tagSearchService/tag_search_service.go	9;"	i	line:9
+math	src/thrift/gen-go-modified/tagSearchService/ttypes.go	9;"	i	line:9
+net	src/client/tag_search_service-remote.go	11;"	i	line:11
+net	src/thrift/gen-go-modified/tagSearchService/tag_search_service-remote/tag_search_service-remote.go	11;"	i	line:11
+net/url	src/client/tag_search_service-remote.go	12;"	i	line:12
+net/url	src/thrift/gen-go-modified/tagSearchService/tag_search_service-remote/tag_search_service-remote.go	12;"	i	line:12
 once	src/kv/kv_test.go	8;"	v	access:private	line:8	type:sync.Once
-search	src/main.go	7;"	i	line:7
+os	src/client/tag_search_service-remote.go	13;"	i	line:13
+os	src/main.go	6;"	i	line:6
+os	src/thrift/gen-go-modified/tagSearchService/tag_search_service-remote/tag_search_service-remote.go	13;"	i	line:13
+processorMap	src/thrift/gen-go-modified/tagSearchService/tag_search_service.go	177;"	w	access:private	ctype:TagSearchServiceProcessor	line:177	type:map[string]thrift.TProcessorFunction
+readField0	src/thrift/gen-go-modified/tagSearchService/tag_search_service.go	434;"	m	access:private	ctype:GetRangeResult	line:434	signature:(iprot thrift.TProtocol)	type:error
+readField0	src/thrift/gen-go-modified/tagSearchService/tag_search_service.go	669;"	m	access:private	ctype:GetUsrsResult	line:669	signature:(iprot thrift.TProtocol)	type:error
+readField1	src/thrift/gen-go-modified/tagSearchService/tag_search_service.go	349;"	m	access:private	ctype:GetRangeArgs	line:349	signature:(iprot thrift.TProtocol)	type:error
+readField1	src/thrift/gen-go-modified/tagSearchService/tag_search_service.go	533;"	m	access:private	ctype:GetUsrsArgs	line:533	signature:(iprot thrift.TProtocol)	type:error
+readField1	src/thrift/gen-go-modified/tagSearchService/ttypes.go	179;"	m	access:private	ctype:UsrInfo	line:179	signature:(iprot thrift.TProtocol)	type:error
+readField1	src/thrift/gen-go-modified/tagSearchService/ttypes.go	64;"	m	access:private	ctype:Range	line:64	signature:(iprot thrift.TProtocol)	type:error
+readField2	src/thrift/gen-go-modified/tagSearchService/tag_search_service.go	542;"	m	access:private	ctype:GetUsrsArgs	line:542	signature:(iprot thrift.TProtocol)	type:error
+readField2	src/thrift/gen-go-modified/tagSearchService/ttypes.go	188;"	m	access:private	ctype:UsrInfo	line:188	signature:(iprot thrift.TProtocol)	type:error
+readField2	src/thrift/gen-go-modified/tagSearchService/ttypes.go	73;"	m	access:private	ctype:Range	line:73	signature:(iprot thrift.TProtocol)	type:error
+readField3	src/thrift/gen-go-modified/tagSearchService/tag_search_service.go	550;"	m	access:private	ctype:GetUsrsArgs	line:550	signature:(iprot thrift.TProtocol)	type:error
+recvGetRange	src/thrift/gen-go-modified/tagSearchService/tag_search_service.go	79;"	m	access:private	ctype:TagSearchServiceClient	line:79	signature:()	type:*Range, error
+recvGetUsrs	src/thrift/gen-go-modified/tagSearchService/tag_search_service.go	142;"	m	access:private	ctype:TagSearchServiceClient	line:142	signature:()	type:[]UsrInfo, error
+search	src/main.go	10;"	i	line:10
 search	src/search/search.go	1;"	p	line:1
+sendGetRange	src/thrift/gen-go-modified/tagSearchService/tag_search_service.go	63;"	m	access:private	ctype:TagSearchServiceClient	line:63	signature:(tagId int32)	type:error
+sendGetUsrs	src/thrift/gen-go-modified/tagSearchService/tag_search_service.go	124;"	m	access:private	ctype:TagSearchServiceClient	line:124	signature:(tagId int32, r *Range, limitSize int32)	type:error
 start	src/level/level.go	15;"	w	access:private	ctype:Level	line:15	type:int
+strconv	src/client/tag_search_service-remote.go	14;"	i	line:14
 strconv	src/global/global.go	4;"	i	line:4
 strconv	src/level/level.go	7;"	i	line:7
 strconv	src/search/search.go	4;"	i	line:4
+strconv	src/thrift/gen-go-modified/tagSearchService/tag_search_service-remote/tag_search_service-remote.go	14;"	i	line:14
+strings	src/client/tag_search_service-remote.go	15;"	i	line:15
+strings	src/thrift/gen-go-modified/tagSearchService/tag_search_service-remote/tag_search_service-remote.go	15;"	i	line:15
 sync	src/kv/kv_test.go	4;"	i	line:4
+tagSearchService	src/thrift/gen-go-modified/tagSearchService/constants.go	4;"	p	line:4
+tagSearchService	src/thrift/gen-go-modified/tagSearchService/tag_search_service-remote/tag_search_service-remote.go	16;"	i	line:16
+tagSearchService	src/thrift/gen-go-modified/tagSearchService/tag_search_service.go	4;"	p	line:4
+tagSearchService	src/thrift/gen-go-modified/tagSearchService/ttypes.go	4;"	p	line:4
+tagSearchServiceProcessorGetRange	src/thrift/gen-go-modified/tagSearchService/tag_search_service.go	221;"	t	access:private	line:221	type:struct
+tagSearchServiceProcessorGetUsrs	src/thrift/gen-go-modified/tagSearchService/tag_search_service.go	264;"	t	access:private	line:264	type:struct
 testing	src/kv/kv_test.go	5;"	i	line:5
+thrift/gen-go-modified/tagSearchService	src/main.go	11;"	i	line:11
+thrift/gen-go/tagSearchService	src/client/tag_search_service-remote.go	16;"	i	line:16
 unsafe	src/kv/kv.go	111;"	i	line:111
-update	src/main.go	8;"	i	line:8
+update	src/main.go	12;"	i	line:12
 update	src/update/update.go	1;"	p	line:1
 update	src/update/update.go	7;"	f	access:private	line:7	signature:(tid int32, uid int32, weight int32, toDel bool)
+writeField0	src/thrift/gen-go-modified/tagSearchService/tag_search_service.go	461;"	m	access:private	ctype:GetRangeResult	line:461	signature:(oprot thrift.TProtocol)	type:error
+writeField0	src/thrift/gen-go-modified/tagSearchService/tag_search_service.go	709;"	m	access:private	ctype:GetUsrsResult	line:709	signature:(oprot thrift.TProtocol)	type:error
+writeField1	src/thrift/gen-go-modified/tagSearchService/tag_search_service.go	374;"	m	access:private	ctype:GetRangeArgs	line:374	signature:(oprot thrift.TProtocol)	type:error
+writeField1	src/thrift/gen-go-modified/tagSearchService/tag_search_service.go	581;"	m	access:private	ctype:GetUsrsArgs	line:581	signature:(oprot thrift.TProtocol)	type:error
+writeField1	src/thrift/gen-go-modified/tagSearchService/ttypes.go	101;"	m	access:private	ctype:Range	line:101	signature:(oprot thrift.TProtocol)	type:error
+writeField1	src/thrift/gen-go-modified/tagSearchService/ttypes.go	216;"	m	access:private	ctype:UsrInfo	line:216	signature:(oprot thrift.TProtocol)	type:error
+writeField2	src/thrift/gen-go-modified/tagSearchService/tag_search_service.go	594;"	m	access:private	ctype:GetUsrsArgs	line:594	signature:(oprot thrift.TProtocol)	type:error
+writeField2	src/thrift/gen-go-modified/tagSearchService/ttypes.go	114;"	m	access:private	ctype:Range	line:114	signature:(oprot thrift.TProtocol)	type:error
+writeField2	src/thrift/gen-go-modified/tagSearchService/ttypes.go	229;"	m	access:private	ctype:UsrInfo	line:229	signature:(oprot thrift.TProtocol)	type:error
+writeField3	src/thrift/gen-go-modified/tagSearchService/tag_search_service.go	609;"	m	access:private	ctype:GetUsrsArgs	line:609	signature:(oprot thrift.TProtocol)	type:error

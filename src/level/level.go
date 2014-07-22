@@ -112,8 +112,8 @@ func (this *IndexLevel) CheckBitFlat(bit int) bool {
 
 func (this *IndexLevel) CheckBit(idx int, bit int) bool {
 	/* byte[0~3] is used to store Range */
-	if idx < 0 || idx >= ((global.IndexBufSize-global.Base)<<3) {
-		panic("CheckBit idx error: " + strconv.Itoa(idx))
+	if idx < 0 || idx >= (global.IndexBufSize-global.Base) {
+		panic("CheckBit idx error: byte: " + strconv.Itoa(idx) + ", bit: " + strconv.Itoa(bit))
 	}
 	if bit < 0 || bit >= 8 {
 		panic("CheckBit bit error: " + strconv.Itoa(bit))
